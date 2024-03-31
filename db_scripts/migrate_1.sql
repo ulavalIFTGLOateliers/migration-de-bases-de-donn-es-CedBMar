@@ -13,7 +13,6 @@ ALTER TABLE singer RENAME TO musician;
 ALTER TABLE musician RENAME COLUMN singerName TO musicianName;
 ALTER TABLE musician ADD COLUMN role VARCHAR(50);
 ALTER TABLE musician ADD COLUMN bandName VARCHAR(50);
--- Ajouter role et bandName
 UPDATE musician SET role = 'vocals', bandName = 'Crazy Duo' WHERE musicianName='Alina';
 UPDATE musician SET role = 'guitar', bandName = 'Mysterio' WHERE musicianName='Mysterio';
 UPDATE musician SET role = 'percussion', bandName = 'Crazy Duo' WHERE musicianName='Rainbow';
